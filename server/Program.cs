@@ -31,6 +31,8 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 var app = builder.Build();
 
 app.UseSession();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 String url = "/api";
 
